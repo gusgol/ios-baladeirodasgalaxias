@@ -13,6 +13,8 @@
 		390E7C501EF8B80B00FC610A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 390E7C4F1EF8B80B00FC610A /* Assets.xcassets */; };
 		390E7C5E1EF8B80B00FC610A /* TPAGTTGTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390E7C5D1EF8B80B00FC610A /* TPAGTTGTests.swift */; };
 		390E7C691EF8B80B00FC610A /* TPAGTTGUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390E7C681EF8B80B00FC610A /* TPAGTTGUITests.swift */; };
+		46BBE76F1F0D80F900548A74 /* EventCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BBE76E1F0D80F900548A74 /* EventCollectionViewCell.swift */; };
+		46BBE7711F0D869A00548A74 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BBE7701F0D869A00548A74 /* Event.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		390E7C641EF8B80B00FC610A /* TPAGTTGUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TPAGTTGUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		390E7C681EF8B80B00FC610A /* TPAGTTGUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TPAGTTGUITests.swift; sourceTree = "<group>"; };
 		390E7C6A1EF8B80B00FC610A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46BBE76E1F0D80F900548A74 /* EventCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCollectionViewCell.swift; sourceTree = "<group>"; };
+		46BBE7701F0D869A00548A74 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 				390E7C4C1EF8B80B00FC610A /* Main.storyboard */,
 				390E7C4F1EF8B80B00FC610A /* Assets.xcassets */,
 				390E7C541EF8B80B00FC610A /* Info.plist */,
+				46BBE76E1F0D80F900548A74 /* EventCollectionViewCell.swift */,
+				46BBE7701F0D869A00548A74 /* Event.swift */,
 			);
 			path = TPAGTTG;
 			sourceTree = "<group>";
@@ -185,7 +191,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Year In Code";
 				TargetAttributes = {
 					390E7C441EF8B80A00FC610A = {
@@ -255,8 +261,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46BBE7711F0D869A00548A74 /* Event.swift in Sources */,
 				390E7C4B1EF8B80B00FC610A /* ViewController.swift in Sources */,
 				390E7C491EF8B80B00FC610A /* AppDelegate.swift in Sources */,
+				46BBE76F1F0D80F900548A74 /* EventCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +329,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -370,6 +379,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -491,6 +501,7 @@
 				390E7C6F1EF8B80B00FC610A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		390E7C701EF8B80B00FC610A /* Build configuration list for PBXNativeTarget "TPAGTTGTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +510,7 @@
 				390E7C721EF8B80B00FC610A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		390E7C731EF8B80B00FC610A /* Build configuration list for PBXNativeTarget "TPAGTTGUITests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +519,7 @@
 				390E7C751EF8B80B00FC610A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
